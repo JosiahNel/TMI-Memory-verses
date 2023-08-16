@@ -1,0 +1,29 @@
+@media (max-width: 62em) {
+  html {
+    font-size: 50%;
+    /* background-color: aliceblue; */
+  }
+
+  .top-menu {
+    grid-template-columns: 1fr;
+  }
+
+  .format {
+    padding: 1.6rem;
+    width: 50%;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 31em) {
+  html {
+    font-size: 40%;
+  }
+
+  .format {
+    font-size: 2.4rem;
+  }
+}

@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <title>Memory Verse</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-menu">
+        <div class="drop-down">
+          <div class="drop-down-box">
+            <label for="question">Question</label>
+            <select name="question" id="question" class="question-selection">
+              <option value="reference">Reference</option>
+              <option value="keyWord">Key word</option>
+              <option value="firstWords">First 5 words</option>
+              <option value="lastWords">Last 5 words</option>
+            </select>
+          </div>
+          <div class="btn-box">
+            <button class="submit-drop btn">Submit</button>
+          </div>
+        </div>
+        <div class="format"><h3>Reference</h3></div>
+        <div class="start">
+          <button class="start-button btn">Start</button>
+        </div>
+      </div>
+      <div class="bottom-box">
+        <div class="question-box"><h3 class="question">John 3:36</h3></div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
