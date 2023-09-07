@@ -75,6 +75,20 @@ html {
   text-transform: capitalize;
 }
 
+.reveal-btn {
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  border: none;
+  width: 30%;
+}
+
+.reveal-box {
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
 .btn:active,
 .btn:hover {
   background-color: #e0d5fe;
