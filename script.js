@@ -658,10 +658,10 @@ const pickKeyWord = function (sel) {
 
 let selection = 'keyWord';
 
-dropBoxBtn.addEventListener('click', function (e) {
+dropBox.addEventListener('change', function (e) {
   e.preventDefault();
+  selection = dropBox.value;
   format.textContent = selection;
-  return (selection = dropBox.value);
 });
 
 startBtn.addEventListener('click', function (e) {

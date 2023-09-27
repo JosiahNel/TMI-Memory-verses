@@ -4,9 +4,10 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'roboto slab';
   font-size: 62.5%;
-  background-color: #906bfe;
+  /* background-color: #906bfe; */
+  background-color: #4f2876;
   color: #fff;
 }
 
@@ -25,11 +26,11 @@ html {
   justify-content: space-between;
 }
 
-.drop-down {
+.question-selection {
   font-size: 1.6rem;
   border-radius: 1rem;
-  /* padding: 2.4rem; */
-  display: grid;
+  padding: 1.6rem 0.8rem;
+  /* display: grid; */
 }
 
 .question {
@@ -41,6 +42,10 @@ html {
   /* width: 100%; */
   padding: 2.4rem 1.6rem;
   margin: 1.2rem;
+}
+
+.drop-down-box {
+  margin-bottom: 2.4rem;
 }
 
 .submit-drop {
