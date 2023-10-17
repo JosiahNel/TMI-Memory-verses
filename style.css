@@ -120,6 +120,10 @@ html {
   cursor: pointer;
 }
 
+.credit-btn-text {
+  font-size: 1.6rem;
+}
+
 /* MENU */
 
 /* .menu {
