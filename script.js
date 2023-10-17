@@ -17,6 +17,8 @@ const v1 = {
   courage; be not afraid, neither be thou dismayed:
   for the Lord thy God is with thee whithersoever
   thou goest.`,
+  secondYear: ``,
+  thirdYear: ``,
 };
 
 const v2 = {
@@ -37,6 +39,8 @@ const v2 = {
 So built we the wall; and all the wall was joined
 together unto the half thereof: for the people had
 a mind to work.`,
+  secondYear: ``,
+  thirdYear: ``,
 };
 
 const v3 = {
@@ -48,6 +52,8 @@ const v3 = {
   Let the words of my mouth, and the meditation
   of my heart, be acceptable in thy sight, O Lord, my
   strength, and my redeemer.`,
+  secondYear: ``,
+  thirdYear: ``,
 };
 
 const v4 = {
@@ -58,6 +64,10 @@ const v4 = {
   reveal: `Psalm 37:4
   Delight thyself also in the Lord; and he shall give
   thee the desires of thine heart.`,
+  secondYear: `5 
+  Commit thy way unto the Lord; trust also in him; and he
+ shall bring it to pass.`,
+  thirdYear: ``,
 };
 
 const v5 = {
@@ -70,6 +80,8 @@ const v5 = {
    Then said I, Lo, I come: in the volume of the book it
   is written of me, 8 I delight to do thy will O my God:
   yea, thy law is within my heart.`,
+  secondYear: ``,
+  thirdYear: ``,
 };
 
 const v6 = {
@@ -80,6 +92,9 @@ const v6 = {
   reveal: `Proverbs 13:4
   The soul of the sluggard desireth, and hath nothing:
   but the soul of the diligent shall be made fat.`,
+  secondYear: ` He that keepeth his mouth keepeth his life: but he that
+  openeth wide his lips shall have destruction. `,
+  thirdYear: ``,
 };
 
 const v7 = {
@@ -101,6 +116,9 @@ const v7 = {
   strength; they shall mount up with wings as eagles;
   they shall run, and not be weary; and they shall
   walk, and not faint.`,
+  secondYear: `29 He giveth power to the faint; and to them that have no
+  might he increaseth strength.`,
+  thirdYear: ``,
 };
 
 const v8 = {
@@ -113,6 +131,8 @@ const v8 = {
   for I am thy God: I will strengthen thee; yea, I will
   help thee; yea, I will uphold thee with the right
   hand of my righteousness.`,
+  secondYear: ``,
+  thirdYear: ``,
 };
 
 const v9 = {
@@ -123,6 +143,10 @@ const v9 = {
   reveal: `Jeremiah 33:3
   Call unto me, and I will answer thee, and show thee
 great and mighty things, which thou knowest not`,
+  secondYear: `2
+  Thus saith the Lord the maker thereof, the Lord that
+ formed it, to establish it; the Lord is his name; `,
+  thirdYear: ``,
 };
 
 const v10 = {
@@ -134,6 +158,10 @@ const v10 = {
   But seek ye first the kingdom of God, and his
   righteousness; and all these things shall be added
   unto you.`,
+  secondYear: ``,
+  thirdYear: `34 Take therefore no thought for the morrow: for the
+  morrow shall take thought for the things of itself. Sufficient
+  unto the day is the evil thereof.`,
 };
 
 const v11 = {
@@ -144,6 +172,8 @@ const v11 = {
   reveal: `Matthew 9:38
   Pray ye therefore the Lord of the harvest, that he
 will send forth labourers into his harvest.`,
+  secondYear: ``,
+  thirdYear: ``,
 };
 const v12 = {
   reference: 'Matthew 11:28-30',
@@ -172,6 +202,9 @@ const v12 = {
   you, and learn of me; for I am meek and lowly in
   heart: and ye shall find rest unto your souls. 30 For my
   yoke is easy, and my burden is light.`,
+  secondYear: ``,
+  thirdYear: `37 Then saith he unto his disciples, The harvest truly is
+  plenteous, but the labourers are few;`,
 };
 const v13 = {
   reference: 'John 3:14-16',
@@ -197,6 +230,8 @@ const v13 = {
   world, that he gave his only begotten Son, that
   whosoever believeth in him should not perish, but
   have everlasting life.`,
+  secondYear: ``,
+  thirdYear: ``,
 };
 const v14 = {
   reference: 'John 3:36',
@@ -207,6 +242,9 @@ const v14 = {
   He that believeth on the Son hath everlasting life:
   and he that believeth not the Son shall not see life;
   but the wrath of God abideth on him.`,
+  secondYear: ``,
+  thirdYear: `35 The Father loveth the Son, and hath given all things into
+  his hand.`,
 };
 const v15 = {
   reference: 'john 15:5',
@@ -217,7 +255,15 @@ const v15 = {
   I am the vine, ye are the branches: He that abideth
   in me, and I in him, the same bringeth forth much
   fruit: for without me ye can do nothing.`,
+  secondYear: ``,
+  thirdYear: `4
+  Abide in me, and I in you. As the branch cannot bear fruit
+ of itself, except it abide in the vine; no more can ye, except
+ ye abide in me. `,
 };
+// console.log(v15[thirdYear]);
+// console.log(v15.thirdYear);
+// console.log(v15.keyWord);
 const v16 = {
   reference: 'acts 1:8',
   keyWord: [
@@ -239,6 +285,8 @@ const v16 = {
   is come upon you: and ye shall be witnesses unto me
   both in Jerusalem, and in all Judea, and in Samaria,
   and unto the uttermost part of the earth.`,
+  secondYear: ``,
+  thirdYear: ``,
 };
 const v17 = {
   reference: 'acts 4:12',
@@ -258,6 +306,8 @@ const v17 = {
   Neither is there salvation in any other: for there is
   none other name under heaven given among men,
   whereby we must be saved.`,
+  secondYear: ``,
+  thirdYear: ``,
 };
 const v18 = {
   reference: 'romans 1:16',
@@ -268,6 +318,8 @@ const v18 = {
   For I am not ashamed of the gospel of Christ: for it
   is the power of God unto salvation to every one that
   believeth; to the Jew first, and also to the Greek`,
+  secondYear: ``,
+  thirdYear: ``,
 };
 const v19 = {
   reference: 'romans 5:19',
@@ -278,6 +330,8 @@ const v19 = {
   For as by one man’s disobedience many were made
   sinners, so by the obedience of one shall many be
   made righteous.`,
+  secondYear: ``,
+  thirdYear: ``,
 };
 const v20 = {
   reference: 'romans 8:18',
@@ -296,6 +350,8 @@ const v20 = {
   For I reckon that the sufferings of this present time
   are not worthy to be compared with the glory which
   shall be revealed in us.`,
+  secondYear: ``,
+  thirdYear: ``,
 };
 const v21 = {
   reference: 'romans 8:28',
@@ -306,6 +362,8 @@ const v21 = {
   And we know that all things work together for good
   to them that love God, to them who are the called
   according to his purpose.`,
+  secondYear: ``,
+  thirdYear: ``,
 };
 const v22 = {
   reference: 'romans 8:38-39',
@@ -329,6 +387,8 @@ const v22 = {
   nor any other creature, shall be able to separate us
   from the love of God, which is in Christ Jesus our
   Lord.`,
+  secondYear: ``,
+  thirdYear: ``,
 };
 const v23 = {
   reference: 'romans 10:17',
@@ -338,6 +398,8 @@ const v23 = {
   reveal: `Romans 10:17
   So then faith cometh by hearing, and hearing by the
   word of God.`,
+  secondYear: ``,
+  thirdYear: ``,
 };
 const v24 = {
   reference: 'romans 12:1',
@@ -359,6 +421,10 @@ const v24 = {
   God, that ye present your bodies a living sacrifice,
   holy, acceptable unto God, which is your reasonable
   service. `,
+  secondYear: `2 And be not conformed to this world: but be ye transformed
+  by the renewing of your mind, that ye may prove what is that
+  good, and acceptable, and perfect, will of God.`,
+  thirdYear: ``,
 };
 const v25 = {
   reference: '1 corinthians 10:13',
@@ -383,6 +449,11 @@ const v25 = {
   suffer you to be tempted above that ye are able; but
   will with the temptation also make a way to escape,
   that ye may be able to bear it.`,
+
+  secondYear: `12 Wherefore let him that thinketh he standeth take heed
+  lest he fall. `,
+
+  thirdYear: ``,
 };
 const v26 = {
   reference: '1 corinthians 13:2',
@@ -404,6 +475,8 @@ const v26 = {
   understand all mysteries, and all knowledge; and
   though I have all faith, so that I could remove
   mountains, and have not charity, I am nothing.`,
+  secondYear: ``,
+  thirdYear: ``,
 };
 const v27 = {
   reference: '2 corinthians 6:14',
@@ -422,6 +495,8 @@ const v27 = {
   unbelievers: for what fellowship hath righteousness
   with unrighteousness? and what communion hath
   light with darkness?`,
+  secondYear: ``,
+  thirdYear: ``,
 };
 const v28 = {
   reference: 'galatians 2:20',
@@ -444,6 +519,9 @@ const v28 = {
   not I, but Christ liveth in me: and the life which I
   now live in the flesh I live by the faith of the Son of
   God, who loved me, and gave himself for me`,
+  secondYear: `21 I do not frustrate the grace of God: for if righteousness
+  comes by the law, then Christ is dead in vain.`,
+  thirdYear: ``,
 };
 const v29 = {
   reference: 'ephesians 2:8-9',
@@ -455,6 +533,8 @@ const v29 = {
   not of yourselves: it is the gift of God: 9
    Not of works,
   lest any man should boast.`,
+  secondYear: ``,
+  thirdYear: ``,
 };
 const v30 = {
   reference: 'philippians 1:6',
@@ -474,6 +554,9 @@ const v31 = {
   reveal: `Philippians 4:13
   I can do all things through Christ which
   strengtheneth me.`,
+  secondYear: ``,
+  thirdYear: `19 But my God shall supply all your need according to his
+  riches in glory by Christ Jesus.`,
 };
 const v32 = {
   reference: '1 timothy 4:12',
@@ -492,6 +575,9 @@ const v32 = {
   Let no man despise thy youth; but be thou an
   example of the believers, in word, in conversation,
   in charity, in spirit, in faith, in purity`,
+  secondYear: ``,
+  thirdYear: `15 Meditate upon these things; give thyself wholly to them;
+  that thy profiting may appear to all.`,
 };
 const v33 = {
   reference: 'hebrews 11:6',
@@ -503,6 +589,10 @@ const v33 = {
   for he that cometh to God must believe that he is,
   and that he is a rewarder of them that diligently
   seek him.`,
+  secondYear: `1
+  Now faith is the substance of things hoped for, the
+ evidence of things not seen. `,
+  thirdYear: ``,
 };
 const v34 = {
   reference: 'james 1:22',
@@ -512,6 +602,8 @@ const v34 = {
   reveal: `James 1:22
   But be ye doers of the word, and not hearers only,
   deceiving your own selves.`,
+  secondYear: ``,
+  thirdYear: ``,
 };
 const v35 = {
   reference: 'james 4:7',
@@ -521,6 +613,10 @@ const v35 = {
   reveal: `James 4:7
   Submit yourselves therefore to God. Resist the
   devil, and he will flee from you.`,
+  secondYear: ``,
+  thirdYear: ` Draw nigh to God, and he will draw nigh to you. Cleanse
+  your hands, ye sinners; and purify your hearts, ye double
+  minded.`,
 };
 const v36 = {
   reference: 'james 5:16',
@@ -531,6 +627,10 @@ const v36 = {
   Confess your faults one to another, and pray one
   for another, that ye may be healed. The effectual
   fervent prayer of a righteous man availeth much.`,
+  secondYear: `9
+  Grudge not one against another, brethren, lest ye be
+ condemned: behold, the judge standeth before the door`,
+  thirdYear: ``,
 };
 const v37 = {
   reference: '2 peter 2:9',
@@ -551,6 +651,10 @@ const v37 = {
    The Lord knoweth how to deliver the godly out of
   temptations, and to reserve the unjust unto the day
   of judgment to be punished:`,
+  secondYear: ``,
+  thirdYear: `21 For it had been better for them not to have known the
+  way of righteousness, than, after they have known it, to
+  turn from the holy commandment delivered unto them.`,
 };
 const v38 = {
   reference: '1 john 1:9',
@@ -561,6 +665,10 @@ const v38 = {
   If we confess our sins, he is faithful and just
   to forgive us our sins, and to cleanse us from all
   unrighteousness.`,
+  secondYear: ``,
+  thirdYear: `8
+  If we say that we have no sin, we deceive ourselves, and
+ the truth is not in us.`,
 };
 const v39 = {
   reference: '1 john 2:15',
@@ -571,6 +679,10 @@ const v39 = {
   Love not the world, neither the things that are in
   the world. If any man love the world, the love of the
   Father is not in him.`,
+  secondYear: ``,
+  thirdYear: `16 For all that is in the world, the lust of the flesh, and the
+  lust of the eyes, and the pride of life, is not of the Father,
+  but is of the world.`,
 };
 const v40 = {
   reference: '1 john 4:7-8',
@@ -583,7 +695,15 @@ const v40 = {
   knoweth God. 8
    He that loveth not knoweth not God;
   for God is love.`,
+
+  secondYear: `9
+  In this was manifested the love of God toward us, because
+ that God sent his only begotten Son into the world, that we
+ might live through him.`,
+  thirdYear: ``,
 };
+
+// const verses = [v4];
 
 const verses = [
   v1,
@@ -636,6 +756,8 @@ const dropBox = document.querySelector('.question-selection');
 const dropBoxBtn = document.querySelector('.submit-drop');
 const startBtn = document.querySelector('.start-button');
 const revealBtn = document.querySelector('.reveal-btn');
+const yearSelection = document.querySelector('.menu-selection');
+const yearQuestionText = document.querySelector('.year-question');
 
 // Functions
 let question;
@@ -650,18 +772,27 @@ const pickKeyWord = function (sel) {
   const keyWord = WordList[number - 1];
   // Display word
   questionText.textContent = keyWord;
+  yearQuestionText.textContent = '';
   question = keyWord;
   // console.log(question);
 };
 
 ////////////////HANDLERS/////////////////
 
-let selection = 'keyWord';
+let selection = 'reference';
+let year = 'firstYear';
 
 dropBox.addEventListener('change', function (e) {
   e.preventDefault();
   selection = dropBox.value;
   format.textContent = selection;
+});
+
+yearSelection.addEventListener('change', function (e) {
+  e.preventDefault();
+  year = yearSelection.value;
+  console.log(typeof year);
+  console.log(typeof selection);
 });
 
 startBtn.addEventListener('click', function (e) {
@@ -677,11 +808,32 @@ revealBtn.addEventListener('click', function (e) {
     // console.log(ver[selection]);
     if (ver[selection].includes(`${question}`)) {
       // console.log(ver.reference);
+      // yearQuestionText.textContent = ver.reveal;
+      // SET COLOR BASED ON YEAR
       questionText.textContent = ver.reveal;
-      questionText.style.fontSize = '2.4rem';
+      if (year === 'thirdYear') {
+        yearQuestionText.textContent = ver.secondYear + ver.thirdYear;
+      } else {
+        yearQuestionText.textContent = ver[year];
+
+        questionText.style.fontSize = '2.4rem';
+        yearQuestionText.style.fontSize = '2.4rem';
+        // yearQuestionText.style.color =
+      }
     }
   });
 });
+
+// MENU BTN
+const menuEL = document.querySelector('.btn-mobile-nav');
+const headerEl = document.querySelector('.header');
+
+menuEL.addEventListener('click', function (e) {
+  headerEl.classList.toggle('nav-open');
+  console.log('clicked!');
+});
+
+// console.log(v15.thirdYear);
 
 // const verses = [v1, v2, v3, v4, v5, v6, v7, v8, v9,];
 // const test = function () {
