@@ -17,10 +17,20 @@ html {
   overflow-x: hidden;
 }
 
+.body-container {
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  /* max-width: 1300px; */
+  /* margin: auto; */
+  position: relative;
+  height: 100vb;
+}
+
 .container {
-  max-width: 130rem;
+  max-width: 1300px;
   text-align: center;
   margin: auto;
+  /* overflow-x: hidden; */
 }
 
 .top-menu {
@@ -37,6 +47,7 @@ html {
   font-size: 1.6rem;
   border-radius: 10px;
   padding: 1.6rem 0.8rem;
+
   /* display: grid; */
 }
 
@@ -110,6 +121,11 @@ html {
 .link:link,
 .link:visited {
   text-decoration: none;
+
+  /* -webkit-appearance: none;  */
+}
+
+.ios {
   color: #000;
 }
 
@@ -207,6 +223,7 @@ html {
   justify-content: space-around;
   /* padding-top: 40svb; */
   row-gap: 10rem;
+  padding: 0, 2.4rem;
 }
 
 .menu-selection {
@@ -215,6 +232,14 @@ html {
   font-size: 1.6rem;
   border-radius: 10px;
   padding: 1.6rem 0.8rem;
+  /* display: block; */
+  height: 4.8rem;
+  margin: 0 2.4rem;
+
+  /* -webkit-appearance: none; */
+  /* color: #000; */
+  /* text-indent: 6px;
+  line-height: 30px; */
 }
 
 .inner-menu-btn {
@@ -224,6 +249,43 @@ html {
   background-color: #fff;
   padding: 1.6rem 0.8rem;
   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+  /* height: 4.8rem; */
+  margin: 0 2.4rem;
+}
+
+.verse-selction {
+  color: #000;
+  background-color: #fff;
+  /* padding: 1.6rem 2.4rem; */
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 0 2.4rem;
+  padding-bottom: 1.2rem;
+}
+
+.verse-selction-text {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.verse-selction-number {
+  padding: 1.8rem, 3.2rem;
+  border: none;
+  border-radius: 5px;
+  height: 3.2rem;
+  width: 4.8rem;
+  /* background-color: #e0d5fe; */
+  border: solid 1px #333;
+  /* padding-bottom: 1.2rem; */
+}
+
+.verse-selction-text-span {
+  font-size: 1.6rem;
+  margin: 0 1.6rem;
+}
+
+.Verse-list-btn {
+  font-size: 1.6rem;
 }
 
 /* //////////////////// */
@@ -259,4 +321,18 @@ html {
 .credit-link:link,
 .credit-link:visited {
   color: #fff;
+}
+/* VERSE.HTML */
+.verse-box {
+  font-size: 1.6rem;
+  margin-bottom: 3.2rem;
+  font-weight: 700;
+  background-color: #613e84;
+  border-radius: 5px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.05);
+  padding: 1.6rem;
+}
+
+.container-verse {
+  padding: 1.2rem 3.2rem;
 }

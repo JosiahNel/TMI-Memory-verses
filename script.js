@@ -705,7 +705,22 @@ const v40 = {
 
 // const verses = [v4];
 
-const verses = [
+/////////////////////////////////////////////////////////////////////
+///////////// Elements
+const questionText = document.querySelector('.question');
+const format = document.querySelector('.format');
+const dropBox = document.querySelector('.question-selection');
+const dropBoxBtn = document.querySelector('.submit-drop');
+const startBtn = document.querySelector('.start-button');
+const revealBtn = document.querySelector('.reveal-btn');
+const yearSelection = document.querySelector('.menu-selection');
+const yearQuestionText = document.querySelector('.year-question');
+const verseSelectionMin = document.querySelector('.verse-selection-1');
+const verseSelectionMax = document.querySelector('.verse-selection-2');
+// Functions
+let question;
+
+let versesDefualt = [
   v1,
   v2,
   v3,
@@ -748,19 +763,10 @@ const verses = [
   v40,
 ];
 
-/////////////////////////////////////////////////////////////////////
-///////////// Elements
-const questionText = document.querySelector('.question');
-const format = document.querySelector('.format');
-const dropBox = document.querySelector('.question-selection');
-const dropBoxBtn = document.querySelector('.submit-drop');
-const startBtn = document.querySelector('.start-button');
-const revealBtn = document.querySelector('.reveal-btn');
-const yearSelection = document.querySelector('.menu-selection');
-const yearQuestionText = document.querySelector('.year-question');
-
-// Functions
-let question;
+console.log('Break');
+// MIN: 5 Max: 40
+// Min - max =  35 = length 35
+// length 35 + 5 = 5-40
 
 const pickKeyWord = function (sel) {
   // compile all key words
@@ -776,11 +782,35 @@ const pickKeyWord = function (sel) {
   question = keyWord;
   // console.log(question);
 };
+const verseSelection = function () {
+  verses = versesDefualt.slice(
+    verseSelectionMin.value - 1,
+    verseSelectionMax.value
+  );
+};
 
 ////////////////HANDLERS/////////////////
 
 let selection = 'reference';
 let year = 'firstYear';
+let verseSelectionLength = 40;
+let verses = [];
+
+verseSelection();
+
+verseSelectionMin.addEventListener('change', function (e) {
+  e.preventDefault();
+  verseSelection();
+});
+// Min = 5
+// Max = 10
+// we want 6
+// 10 - (5- 1) = 6
+
+verseSelectionMax.addEventListener('change', function (e) {
+  e.preventDefault();
+  verseSelection();
+});
 
 dropBox.addEventListener('change', function (e) {
   e.preventDefault();
@@ -798,14 +828,13 @@ yearSelection.addEventListener('change', function (e) {
 startBtn.addEventListener('click', function (e) {
   e.preventDefault();
   pickKeyWord(selection);
-  // console.log(selection);
+  // console.log(verses);
   questionText.style.fontSize = '3.2rem';
 });
 
 revealBtn.addEventListener('click', function (e) {
   e.preventDefault();
   verses.forEach(function (ver) {
-    // console.log(ver[selection]);
     if (ver[selection].includes(`${question}`)) {
       // console.log(ver.reference);
       // yearQuestionText.textContent = ver.reveal;
@@ -845,3 +874,7 @@ menuEL.addEventListener('click', function (e) {
 //   });
 // };
 // test();
+
+/* 
+
+*/

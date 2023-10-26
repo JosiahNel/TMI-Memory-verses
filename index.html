@@ -2,6 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="format-detection" content="telephone=no" /> -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="queries.css" />
 
@@ -14,60 +15,92 @@
     <title>Memory Verse</title>
   </head>
   <body>
-    <div class="header">
-      <div class="menu">
-        <div class="menu-items">
-          <select name="ftm" id="ftm" class="menu-selection">
-            <option value="firstYear">1st Year</option>
-            <option value="secondYear">2nd Year</option>
-            <option value="thirdYear">3rd year</option>
-          </select>
-
-         <a class="link inner-menu-btn btn" href="credits.html">
-            <button class="btn"></button>
-            <p class="credit-btn-text">Credits</p>
-          </a>
-        </div>
-      </div>
-      <button class="btn-mobile-nav btn">
-        <ion-icon class="icon-moblie-nav" name="menu"></ion-icon>
-
-        <ion-icon class="icon-moblie-nav" name="close"></ion-icon>
-      </button>
-    </div>
-
-    <div class="container">
-      <div class="top-menu">
-        <div class="drop-down">
-          <div class="drop-down-box">
-            <!-- <label for="question"></label> -->
-            <select name="question" id="question" class="question-selection">
-              <option value="reference">Reference</option>
-              <option value="keyWord">Key word</option>
-              <option value="firstWords">First 5 words</option>
-              <option value="lastWords">Last 5 words</option>
+    <div class="body-container">
+      <div class="header">
+        <div class="menu">
+          <div class="menu-items">
+            <select name="ftm" id="ftm" class="menu-selection ios">
+              <option value="firstYear">1st Year</option>
+              <option value="secondYear">2nd Year</option>
+              <option value="thirdYear">3rd Year</option>
             </select>
+
+            <div class="verse-selction">
+              <p class="verse-selction-text">
+                Select what verses you want using the verse number
+              </p>
+              <span class="verse-selction-text-span">Min: 1 Max:40</span>
+
+              <input
+                class="verse-selction-number verse-selection-1"
+                type="number"
+                value="1"
+                max="40"
+                min="1"
+              />
+              <span class="verse-selction-text-span">through -> </span>
+              <input
+                class="verse-selction-number verse-selection-2"
+                type="number"
+                value="40"
+                max="40"
+                min="1"
+              />
+            </div>
+
+            <a class="link inner-menu-btn btn" href="verses.html">
+              <p class="Verse-list-btn ios">Verse list</p>
+            </a>
+
+            <a class="link inner-menu-btn btn" href="credits.html">
+              <p class="credit-btn-text ios">Credits</p>
+            </a>
           </div>
-          <!-- <div class="btn-box">
+        </div>
+        <button class="btn-mobile-nav btn">
+          <ion-icon class="icon-moblie-nav" name="menu"></ion-icon>
+
+          <ion-icon class="icon-moblie-nav" name="close"></ion-icon>
+        </button>
+      </div>
+
+      <div class="container">
+        <div class="top-menu">
+          <div class="drop-down">
+            <div class="drop-down-box">
+              <!-- <label for="question"></label> -->
+              <select
+                name="question"
+                id="question"
+                class="question-selection ios"
+              >
+                <option value="reference">Reference</option>
+                <option value="keyWord">Key word</option>
+                <option value="firstWords">First 5 words</option>
+                <option value="lastWords">Last 5 words</option>
+              </select>
+            </div>
+            <!-- <div class="btn-box">
             <button class="submit-drop btn">Submit</button>
           </div> -->
+          </div>
+          <div class="format"><h3>Reference</h3></div>
+          <div class="start">
+            <button class="start-button btn ios">Start</button>
+          </div>
         </div>
-        <div class="format"><h3>Reference</h3></div>
-        <div class="start">
-          <button class="start-button btn">Start</button>
-        </div>
-      </div>
 
-      <div class="bottom-box">
-        <div class="question-box">
-          <h3 class="question">John 3:36</h3>
-          <h3 class="year-question"></h3>
+        <div class="bottom-box">
+          <div class="question-box">
+            <h3 class="question">John 3:36</h3>
+            <h3 class="year-question"></h3>
+          </div>
         </div>
-      </div>
 
-      <div class="reveal-box">
-        <div class="reveal-container">
-          <button class="reveal-btn btn">Reveal</button>
+        <div class="reveal-box">
+          <div class="reveal-container">
+            <button class="reveal-btn btn ios">Reveal</button>
+          </div>
         </div>
       </div>
     </div>
