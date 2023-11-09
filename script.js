@@ -717,8 +717,18 @@ const yearSelection = document.querySelector('.menu-selection');
 const yearQuestionText = document.querySelector('.year-question');
 const verseSelectionMin = document.querySelector('.verse-selection-1');
 const verseSelectionMax = document.querySelector('.verse-selection-2');
+const menuEL = document.querySelector('.btn-mobile-nav');
+const headerEl = document.querySelector('.header');
+const timerEl = document.querySelector('.timer-btn');
+
 // Functions
 let question;
+let selection = 'reference';
+let year = 'firstYear';
+let verseSelectionLength = 40;
+let verses = [];
+let timerActive = false;
+let timer;
 
 let versesDefualt = [
   v1,
@@ -789,12 +799,14 @@ const verseSelection = function () {
   );
 };
 
-////////////////HANDLERS/////////////////
+const startTimer = function () {
+  if (timerActive) {
+    const timer = setTimeout(() => alert('TIME UP!'), 30000);
+    return timer;
+  }
+};
 
-let selection = 'reference';
-let year = 'firstYear';
-let verseSelectionLength = 40;
-let verses = [];
+////////////////HANDLERS/////////////////
 
 verseSelection();
 
@@ -830,6 +842,8 @@ startBtn.addEventListener('click', function (e) {
   pickKeyWord(selection);
   // console.log(verses);
   questionText.style.fontSize = '3.2rem';
+  clearTimeout(timer);
+  startTimer();
 });
 
 revealBtn.addEventListener('click', function (e) {
@@ -850,31 +864,35 @@ revealBtn.addEventListener('click', function (e) {
         // yearQuestionText.style.color =
       }
     }
+    clearTimeout(timer);
   });
 });
 
 // MENU BTN
-const menuEL = document.querySelector('.btn-mobile-nav');
-const headerEl = document.querySelector('.header');
 
 menuEL.addEventListener('click', function (e) {
   headerEl.classList.toggle('nav-open');
   console.log('clicked!');
 });
 
-// console.log(v15.thirdYear);
+// TIMER
+////////////////////////////////////
 
-// const verses = [v1, v2, v3, v4, v5, v6, v7, v8, v9,];
-// const test = function () {
-//   verses.forEach(function (ver) {
-//     // console.log(ver[selection]);
-//     if (ver[selection].includes('built')) {
-//       console.log('found');
-//     }
-//   });
-// };
-// test();
-
+timerEl.addEventListener('click', function (e) {
+  e.preventDefault();
+  if (timerActive) {
+    timerActive = false;
+    timerEl.style.border = '5px solid #fff';
+  } else {
+    timerActive = true;
+    timerEl.style.border = '5px solid #4f2876';
+  }
+  console.log(timerActive);
+});
 /* 
 
 */
+// const time = 3000;
+// const timer = setTimeout(() => {
+//   alert('TIME UP');
+// }, time)

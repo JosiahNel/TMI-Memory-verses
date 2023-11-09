@@ -242,6 +242,16 @@ html {
   line-height: 30px; */
 }
 
+.menu-links {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.menu-links .inner-menu-btn {
+  width: 100%;
+}
+
 .inner-menu-btn {
   /* width: 50%; */
   border-radius: 10px;
@@ -286,6 +296,16 @@ html {
 
 .Verse-list-btn {
   font-size: 1.6rem;
+}
+
+.timer-text {
+  font-size: 1.6rem;
+}
+
+.timer-btn {
+  width: 90%;
+  padding: 1.6rem 4.8rem;
+  border: 5px solid #fff;
 }
 
 /* //////////////////// */
