@@ -728,7 +728,6 @@ let year = 'firstYear';
 let verseSelectionLength = 40;
 let verses = [];
 let timerActive = false;
-let timer;
 
 let versesDefualt = [
   v1,
@@ -798,14 +797,15 @@ const verseSelection = function () {
     verseSelectionMax.value
   );
 };
+let timer;
 
 const startTimer = function () {
-  if (timerActive) {
-    const timer = setTimeout(() => alert('TIME UP!'), 30000);
-    return timer;
-  }
+  const tick = function () {
+    console.log('TIME UP!');
+  };
+  // clearTimeout(timer);
+  if (timerActive) return (timer = setTimeout(tick, 1000));
 };
-
 ////////////////HANDLERS/////////////////
 
 verseSelection();
@@ -869,6 +869,7 @@ revealBtn.addEventListener('click', function (e) {
 });
 
 // MENU BTN
+////////////////////////////////////
 
 menuEL.addEventListener('click', function (e) {
   headerEl.classList.toggle('nav-open');
@@ -889,10 +890,3 @@ timerEl.addEventListener('click', function (e) {
   }
   console.log(timerActive);
 });
-/* 
-
-*/
-// const time = 3000;
-// const timer = setTimeout(() => {
-//   alert('TIME UP');
-// }, time)
