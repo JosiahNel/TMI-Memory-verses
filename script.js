@@ -722,7 +722,7 @@ const headerEl = document.querySelector('.header');
 const timerEl = document.querySelector('.timer-btn');
 
 // Functions
-let question;
+let question, timer;
 let selection = 'reference';
 let year = 'firstYear';
 let verseSelectionLength = 40;
@@ -797,7 +797,7 @@ const verseSelection = function () {
     verseSelectionMax.value
   );
 };
-let timer;
+
 
 const startTimer = function () {
   const tick = function () {
