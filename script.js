@@ -801,7 +801,7 @@ const verseSelection = function () {
 
 const startTimer = function () {
   const tick = function () {
-    console.log('TIME UP!');
+    alert('TIME UP!');
   };
   // clearTimeout(timer);
   if (timerActive) return (timer = setTimeout(tick, 1000));
