@@ -804,7 +804,7 @@ const startTimer = function () {
     alert('TIME UP!');
   };
   // clearTimeout(timer);
-  if (timerActive) return (timer = setTimeout(tick, 1000));
+  if (timerActive) return (timer = setTimeout(tick, 30000));
 };
 ////////////////HANDLERS/////////////////
 
